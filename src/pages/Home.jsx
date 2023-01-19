@@ -6,13 +6,15 @@ const Home = () => {
   return (
     <main className='bg-black'>
       <DisplayFilm />
-      {/* <RowFilm title={'Latest'} fetchURL={request.requestLatest} /> */}
-      <RowFilm title={'Up Coming'} fetchURL={request.requestUpcoming} />
-      <RowFilm title={'Popular'} fetchURL={request.requestPopular} />
-      <RowFilm title={'Trending'} fetchURL={request.requestTrending} />
-      <RowFilm title={'Comedy'} fetchURL={request.requestComedy} />
-      <RowFilm title={'Series'} fetchURL={request.requestTvTrending} />
-      <RowFilm title={'Recomendation Series'} fetchURL={request.requestTvRecomendations} />
+      <div className='mt-36 md:mt-10'>
+        {/* <RowFilm title={'Latest'} fetchURL={request.requestLatest} /> */}
+        <RowFilm title={'Recomendation'} fetchURL={request.requestRecomendations} />
+        <RowFilm title={'Up Coming'} fetchURL={request.requestUpcoming} />
+        <RowFilm title={'Popular'} fetchURL={request.requestPopular} />
+        <RowFilm title={'Trending'} fetchURL={request.requestTrending} />
+        <RowFilm title={'Comedy'} fetchURL={request.requestComedy} />
+        <RowFilm title={'Series'} fetchURL={request.requestTvTrending} />
+      </div>
     </main>
   );
 };

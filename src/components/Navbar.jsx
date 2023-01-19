@@ -9,7 +9,7 @@ const Navbar = () => {
     setLanguange(e.target.value);
   }
   return (
-    <header className='flex items-center justify-between px-5 w-full fixed bg-transparent z-50 md:pl-5  md:mt-20 '>
+    <header className='flex items-center justify-between px-5 w-full absolute  bg-transparent z-50 md:pl-5'>
       <div>
         <img src={netflixLogo} className='w-32 p-0 md:ml-7 md:w-40'></img>
       </div>

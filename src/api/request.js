@@ -7,7 +7,7 @@ const request = {
   requestTrending: `https://api.themoviedb.org/3/trending/all/day?api_key=${key}&languange-en-US&page=1`,
   requestComedy: `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=drama&page=1&include_adult=false,`,
   requestTvTrending: `https://api.themoviedb.org/3/tv/popular?api_key=${key}&language=en-US&page=1`,
-  requestTvRecomendations: `https://api.themoviedb.org/3/tv/{tv_id}/recommendations?api_key=${key}&language=en-US&page=1`,
+  requestRecomendations: `https://api.themoviedb.org/3/movie/{movie_id}/recommendations?api_key=${key}&language=en-US&page=1`,
 };
 
 export default request;

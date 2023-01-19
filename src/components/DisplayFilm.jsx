@@ -15,9 +15,9 @@ const DisplayFilm = () => {
     });
   }, []);
   return (
-    <div className='w-full h-96 z-0 m-0  text-white bg-black relative md:-mt-24'>
+    <div className='w-full h-full z-0 m-0  text-white bg-black relative'>
       <div className='w-full h-full'>
-        <img className='w-full h-96 object-cover md:h-full' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
+        <img className='w-full h-96 md:h-screen md:object-cover md:object-center' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
       </div>
       <div className='absolute w-full top-[20%] p-4 md:top-[25%] md:p-10'>
         <h1 className='text-2xl font-semibold mb-5 md:w-7/12 md:text-6xl'>{movie?.title}</h1>
